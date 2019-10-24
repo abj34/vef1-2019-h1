@@ -1,0 +1,77 @@
+@import "./config";
+
+.index__main {
+
+    &__row {
+        display: flex;
+        margin-top: $gutter;
+        margin-right: -$gutterHalf;
+        margin-bottom: $gutter;
+        margin-left: -$gutterHalf;
+        flex-wrap: wrap;
+
+        &__column {
+            width: $s12-col;
+            padding-right: $gutterHalf;
+            padding-left: $gutterHalf;
+
+            &__content {
+                display: flex;
+                margin-right: -$gutterHalf;
+                margin-left: -$gutterHalf;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                &.content__reverse {
+                    flex-direction: row-reverse;
+                }
+
+                &__items {
+                    width: $s6-col;
+                    padding-right: $gutterHalf;
+                    padding-left: $gutterHalf;
+                    margin-top: $gutter;
+                    margin-bottom: $gutter;
+                    
+
+                    &.items__desc {
+                        align-self: center;
+                    }
+
+                    img {
+                        max-width: 100%;
+                    }
+
+                    .content__button {
+                        width: 250px;
+                        max-width: 100%;
+                        padding: 14px;
+                        background-color: $color-blue;
+                        border: 0px solid transparent;
+                        border-radius: 5px;
+                        font-size: 18px;
+                        transition: color 0.2s ease-in-out;
+                        transition: background-color 0.2s ease-in-out;
+                    }
+
+                    .content__button:hover {
+                        color: $color-white;
+                        background-color: $color-orange;
+                    }
+
+                    p {
+                        margin-bottom: 36px;
+                        font-size: 24px;
+                    }
+
+                    h2 {
+                        margin-bottom: 36px;
+                        font-family: $fheading;
+                        font-size: 36px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}

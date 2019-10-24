@@ -1,1 +1,34 @@
 // TODO stillingar hér
+
+//font - kannski bæta við rest af fontstærðum
+$fbase: 16px;
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Oswald:400,700");
+$fbody: "Open Sans", helvetica, arial, sans-serif;
+$fheading: "Oswald", Verdana, serif;
+
+//Gutter
+$gutter: 20px;
+$gutterHalf: $gutter / 2;
+$gutterDouble: $gutter * 2;
+
+//mediawidth
+$wmax: 1200px;
+$w1000: 1000px;
+$w800: 800px;
+$w400: 400px;
+
+//colSize
+$s12-col: 100%;
+$s8-col: 2 * $s12-col / 3;
+$s6-col: $s12-col / 2;
+$s4-col: $s8-col / 2;
+$s3-col: $s6-col / 2;
+$s2-col: $s4-col / 2;
+$s1-col: $s2-col / 2;
+$s5-col: $s2-col + $s3-col;
+
+//color palette
+$color-black: #000000;
+$color-white: #fffcf2;
+$color-orange: #ff5000;
+$color-blue: #00b7ff;

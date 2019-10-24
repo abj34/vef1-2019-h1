@@ -1,0 +1,194 @@
+@import "scss/config";
+
+.product {
+
+    &__title {
+    margin-top: $gutter;
+    margin-bottom: $gutter;
+    font-family: $fheading;
+    font-size: 36px;
+    }
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -$gutterHalf;
+        margin-bottom: $gutterDouble;
+        margin-left: -$gutterHalf;
+
+        &__column {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &__image {
+            width: $s4-col;
+            padding-right: $gutterHalf;
+            padding-left: $gutterHalf;
+
+            .product__image {
+                width: $s12-col;
+            }
+
+            &__content {
+                width: $s8-col;
+                padding-right: $gutterHalf;
+                padding-left: $gutterHalf;
+
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: space-between;
+
+                &__desc {
+                    display: flex;
+                    width: 100%;
+                    flex-direction: column;
+                }
+
+                &__card {
+
+                    .product__price {
+                        margin-top: $gutter;
+                        margin-bottom: $gutterHalf;
+                        font-family: $fheading;
+                        font-size: 24px;
+                        font-weight: 700;
+                    }
+
+                    &__items {
+                        display: flex;
+                        width: $s4-col;
+                        flex-direction: row;
+                        font-size: 24px;
+                        padding: $gutterHalf;
+                        padding-right: $gutterHalf;
+                        padding-left: $gutterHalf;
+                        justify-content: space-between;
+
+                        .product__cart {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+
+                            &__input {
+                                height: 4em;
+                                padding: 0 14 0 14;
+                                border: 1px solid $color-black;
+                                border-radius: 5px;
+                            }
+                        }
+                    }
+
+                    &__button {
+                        display:flex;
+                        font-size: 24px;
+
+                        .product__button {
+                            display: flex;
+                            flex-direction: row;
+                            height: 4em;
+                            max-width: 100%;
+                            padding: 14px;
+                            border: 1px solid $color-black;
+                            border-radius: 5px;
+                            transition: color 0.2s ease-in-out;
+                            transition: background-color 0.2s ease-in-out;
+
+                            p {
+                                font-size: 16px;
+                            }
+                        }
+                        .product__button:hover {
+                            background-color: $color-blue; 
+                            border: none; 
+                        }
+                    }
+
+
+                }
+            }
+        }
+
+
+    }
+
+    &__shipping {
+        display: flex;
+        flex-direction: row;
+        width: $s12-col;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-right: -$gutterHalf;
+        margin-bottom: $gutterDouble;
+        margin-left: -$gutterHalf;
+
+        &__column {
+            width: $s5-col;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            padding-right: $gutterHalf;
+            padding-left: $gutterHalf;
+            margin-right: $s1-col;
+
+
+            &__form {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                margin-top: auto;
+                justify-content: space-between;
+
+                .product__title {
+                    margin-top: $gutter;
+                    margin-bottom: $gutter;
+                    font-family: $fheading;
+                    font-size: 36px;
+                }
+
+                .product__field {
+                    display: flex;
+                    padding-top: $gutter;
+                    margin-bottom: $gutter;
+                    justify-content: space-between;
+                    font-size: 24px;
+
+                    &__select {
+                        width: 300px;
+                    }
+
+                    &__input {
+                        width: 300px;
+                    }
+                }
+            }
+
+
+
+        }
+
+        &__button {
+            display: flex;
+            justify-content: center;
+            margin-bottom: $gutterDouble;
+
+            .button__buy {
+                width: 200px;
+                max-width: 100%;
+                padding: 14px;
+                background-color: $color-blue;
+                border: 0px solid transparent;
+                border-radius: 5px;
+                transition: color 0.2s ease-in-out;
+                transition: background-color 0.2s ease-in-out;
+            }
+
+            .button__buy:hover {
+                color: $color-white;
+                background-color: $color-orange;
+            }
+        }
+    }
+}

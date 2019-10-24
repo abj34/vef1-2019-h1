@@ -1,0 +1,88 @@
+@import "./config";
+
+.header {
+    max-width: $wmax;
+    padding-top: 1em;
+    padding-right: $gutter;
+    padding-bottom: 1em;
+    padding-left: $gutter;
+    margin: 0 auto;
+
+    &__background {
+        background-color: $color-orange;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: center;
+        margin-right: -$gutterHalf;
+        margin-left: -$gutterHalf;
+        flex-direction: column;
+    
+        &__title {
+            padding-right: $gutterHalf;
+            padding-left: $gutterHalf;
+            font-family: $fheading;
+            font-size: 60px;
+            text-align: center;
+        }
+
+        &__links {
+            display: flex;
+            padding-right: $gutterHalf;
+            padding-left: $gutterHalf;
+            flex-direction: row;
+
+            &__block {
+                width: $s12-col;
+                padding-top: $gutter;
+                font-size: 14px;
+                
+                a {
+                    color: $color-black;
+                    text-decoration: none;
+                    transition: color 0.2s ease-in-out;
+                }
+
+                a:hover {
+                    color: $color-white;
+                }
+                
+                &.header__front {
+                    width:$s3-col;
+                }
+                &.header__pages {
+                    display: flex;
+                    width: $s6-col;
+                    font-weight: 1000;
+                    font-size: 24px;
+                    text-decoration: none;
+                    flex-direction: row;
+                    justify-content: center;
+
+                    .current {
+                        text-decoration: underline;
+                    }
+
+                    a {
+                        padding-right: 10px;
+                        padding-left: 10px;
+                    }
+                }
+                
+                &.header__cart {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    width: $s3-col;
+                    font-weight: 200;
+                    flex-direction: row;
+                    justify-content: flex-end;
+
+                    .header__img {
+                        width: 2em;
+                    }
+                }
+            }
+        }
+    }
+}

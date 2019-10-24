@@ -1,0 +1,64 @@
+@import "./config";
+
+.footer {
+    max-width: $wmax;
+    padding-top: 1em;
+    padding-right: $gutter;
+    padding-bottom: 1em;
+    padding-left: $gutter;
+    margin: 0 auto;
+
+    @media (min-width: $wmax) {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    &__background {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        background-color: $color-blue;
+    }
+    &__row {
+        display: flex;
+        margin-right: -$gutterHalf;
+        margin-left: -$gutterHalf;
+        flex-wrap: nowrap;
+        font-weight: bold;
+
+        @media (max-width: $w800) {
+            flex-wrap: wrap;
+        }
+
+        &__column {
+            display: flex;
+            width: $s6-col;
+            padding-right: $gutterHalf;
+            padding-left: $gutterHalf;
+            line-height: 2em;
+            flex-direction: column;
+
+            @media (min-width: $w1000) {
+                width: $s3-col;
+            }
+
+            &__title {
+                color: $color-black;
+            }
+
+            a {
+                color: $color-white;
+                text-decoration: none;
+                transition: color 0.2s ease-in-out;
+            }
+
+            a:hover {
+                color: $color-black;
+            }
+        }
+    }
+
+    &__copyright {
+        margin-top: 16px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,74 @@
+@import "scss/config";
+
+.staff {
+    padding-top: $gutterDouble;
+    padding-bottom: $gutterDouble;
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -$gutterHalf;
+        margin-left: -$gutterHalf;
+
+        &__column {
+            width: $s6-col;
+            padding-right: $gutterHalf;
+            padding-left: $gutterHalf;
+
+            @media (max-width: $w800) {
+                width: $s12-col;
+            }
+
+            &__card {
+
+                &:hover &__content{
+                    transform: rotateY(180deg);
+                }
+
+                &__content {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding-top: $gutter;
+                    padding-bottom: $gutter;
+                    transition: transform 0.2s ease-in-out;
+                    transform-style: preserve-3d;
+                    backface-visibility: hidden;
+
+                    &__image {
+
+                        .staff__image {
+                            width:100%;
+                        }
+
+                    }
+
+                    &__front {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        transform: rotateY(180deg);
+
+                        &.card__back {
+                            backface-visibility: hidden;
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+
+                            h2 {
+                                margin-bottom: $gutter;
+                                font-family: $fheading;
+                                font-size: 36px;
+                            }
+
+                            p {
+                                font-size: 21px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
