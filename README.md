@@ -20,10 +20,10 @@ Verkefnið inniheldur 5 .html skjöl, og eitt .css skjal sem stjórnar öllu út
 
 Skjölin eru:
 
-* HTML
+* HTML: 
     `index.html`, `cart.html`, `course.html`, `products.html` og `staff.html`.
 
-* SASS
+* SASS: 
     `styles.scss`, `cart.scss`, `config.scss`, `course.scss`, `footer.scss`, `header.scss`, `index,scss` og `staff.scss`.
 
 
