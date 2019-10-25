@@ -15,7 +15,7 @@ $gutterDouble: $gutter * 2;
 $wmax: 1200px;
 $w1000: 1000px;
 $w800: 800px;
-$w400: 400px;
+$w500: 500px;
 
 //colSize
 $s12-col: 100%;
@@ -26,6 +26,7 @@ $s3-col: $s6-col / 2;
 $s2-col: $s4-col / 2;
 $s1-col: $s2-col / 2;
 $s5-col: $s2-col + $s3-col;
+$s10-col: $s5-col * 2;
 
 //color palette
 $color-black: #000000;

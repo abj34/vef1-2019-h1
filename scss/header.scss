@@ -33,10 +33,16 @@
             padding-left: $gutterHalf;
             flex-direction: row;
 
+            
+            @media (max-width: $w500) {
+                flex-wrap: wrap;
+            }
+
             &__block {
                 width: $s12-col;
                 padding-top: $gutter;
                 font-size: 14px;
+
                 
                 a {
                     color: $color-black;
@@ -60,6 +66,15 @@
                     flex-direction: row;
                     justify-content: center;
 
+                    @media (max-width: $w800) {
+                        flex-wrap: wrap;
+                    }
+                    
+                    @media (max-width: $w500) {
+                        flex-wrap: nowrap;
+                        width: $s12-col;
+                    }
+
                     .current {
                         text-decoration: underline;
                     }
@@ -77,7 +92,13 @@
                     font-weight: 200;
                     flex-direction: row;
                     justify-content: flex-end;
+                    align-self: flex-end;
 
+                    
+                    @media (max-width: $w500) {
+                        justify-content: center;
+                        width: $s12-col;
+                    }
                     .header__img {
                         width: 2em;
                     }

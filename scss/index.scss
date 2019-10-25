@@ -1,6 +1,6 @@
 @import "./config";
 
-.index__main {
+.index {
 
     &__row {
         display: flex;
@@ -32,8 +32,12 @@
                     padding-left: $gutterHalf;
                     margin-top: $gutter;
                     margin-bottom: $gutter;
-                    
 
+                    @media (max-width: $w500) {
+                        width: $s12-col;
+                        flex-wrap: wrap;
+                    }
+                
                     &.items__desc {
                         align-self: center;
                     }

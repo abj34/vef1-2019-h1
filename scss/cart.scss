@@ -17,18 +17,19 @@
         margin-left: -$gutterHalf;
 
         &__column {
+            width: $s12-col;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-        }
 
-        &__image {
-            width: $s4-col;
-            padding-right: $gutterHalf;
-            padding-left: $gutterHalf;
+            &__image {
+                width: $s4-col;
+                padding-right: $gutterHalf;
+                padding-left: $gutterHalf;
 
-            .product__image {
-                width: $s12-col;
+                .product__image {
+                    width: $s12-col;
+                }
             }
 
             &__content {
@@ -59,59 +60,56 @@
 
                     &__items {
                         display: flex;
-                        width: $s4-col;
+                        width: $s6-col;
                         flex-direction: row;
                         font-size: 24px;
-                        padding: $gutterHalf;
-                        padding-right: $gutterHalf;
-                        padding-left: $gutterHalf;
+                        padding: 0;
                         justify-content: space-between;
 
                         .product__cart {
                             display: flex;
                             flex-direction: column;
-                            justify-content: space-between;
 
                             &__input {
                                 height: 4em;
                                 padding: 0 14 0 14;
+                                width: $s10-col;
                                 border: 1px solid $color-black;
                                 border-radius: 5px;
                             }
                         }
-                    }
 
-                    &__button {
-                        display:flex;
-                        font-size: 24px;
-
-                        .product__button {
-                            display: flex;
-                            flex-direction: row;
-                            height: 4em;
-                            max-width: 100%;
-                            padding: 14px;
-                            border: 1px solid $color-black;
-                            border-radius: 5px;
-                            transition: color 0.2s ease-in-out;
-                            transition: background-color 0.2s ease-in-out;
-
-                            p {
-                                font-size: 16px;
+                        &__button {
+                            display:flex;
+                            font-size: 24px;
+                            width: $s6-col;
+                            align-items: flex-end;
+    
+                            .product__button {
+                                display: flex;
+                                flex-direction: row;
+                                height: 4em;
+                                max-width: 100%;
+                                padding: 10px;
+                                margin: 10px;
+                                border: 1px solid $color-black;
+                                border-radius: 5px;
+                                transition: color 0.2s ease-in-out;
+                                transition: background-color 0.2s ease-in-out;
+    
+                                p {
+                                    font-size: 16px;
+                                }
+                            }
+                            .product__button:hover {
+                                background-color: $color-blue; 
+                                border: none; 
                             }
                         }
-                        .product__button:hover {
-                            background-color: $color-blue; 
-                            border: none; 
-                        }
                     }
-
-
                 }
             }
         }
-
-
     }
 
     &__shipping {
@@ -132,6 +130,10 @@
             padding-right: $gutterHalf;
             padding-left: $gutterHalf;
             margin-right: $s1-col;
+
+            @media (max-width: $w500) {
+                width: $s12-col;
+            }
 
 
             &__form {
@@ -164,8 +166,6 @@
                     }
                 }
             }
-
-
 
         }
 
